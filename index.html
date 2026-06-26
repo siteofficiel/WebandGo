@@ -265,21 +265,59 @@
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
     .reveal.visible{opacity:1;transform:none}
 
-    @media (max-width: 1080px){
+    @media (max-width: 1180px){
       .hero-grid,.features-split,.contact-grid{grid-template-columns:1fr}
       .hero-visual{min-height:560px}
-      .grid-4,.template-grid,.pricing,.testimonials{grid-template-columns:repeat(2,1fr)}
+      .grid-4,.template-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 900px){
+      .hero{padding:52px 0 36px}
+      .hero-grid{gap:28px}
+      .pricing,.grid-3,.grid-4,.template-grid,.form-row{grid-template-columns:1fr}
+      .nav-shell{display:none}
+      .menu-btn{display:grid}
+      .nav{position:relative}
+      .nav-links{display:none;position:absolute;top:calc(var(--header) + 10px);left:0;right:0;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start;gap:12px}
+      .nav-links.open{display:flex}
+      .nav-actions .btn-primary{display:none}
+      .contact-grid{gap:16px}
     }
     @media (max-width: 780px){
       :root{--header:74px}
-      .menu-btn{display:grid}
-      .nav-links{display:none;position:absolute;top:calc(var(--header) + 10px);left:20px;right:20px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}
-      .nav-links.open{display:flex}
-      .grid-3,.grid-4,.template-grid,.pricing,.testimonials,.form-row{grid-template-columns:1fr}
-      .hero{padding-top:34px}
-      .hero-copy,.ui-main,.contact-box{padding:0}
-      .ui-main{inset:0;position:relative}
-      .floating-metric,.floating-chat{position:relative;inset:auto;right:auto;top:auto;bottom:auto;margin-top:12px}
+      .container{width:min(var(--max),calc(100% - 24px))}
+      .section{padding:82px 0}
+      .section-head{margin-bottom:30px}
+      h1{font-size:clamp(2.4rem,14vw,4rem);line-height:.94}
+      h2{font-size:clamp(1.9rem,10vw,3rem)}
+      p.lead{font-size:16px;line-height:1.7}
+      .hero-copy{gap:20px}
+      .hero-actions{flex-direction:column;align-items:stretch}
+      .hero-actions .btn{width:100%}
+      .hero-points{display:grid;grid-template-columns:1fr;gap:10px}
+      .hero-visual{min-height:auto}
+      .ui-main{position:relative;inset:auto;padding:18px}
+      .ui-window{min-height:auto;padding:16px}
+      .ui-hero{padding:20px}
+      .ui-hero h3{font-size:24px}
+      .ui-grid{grid-template-columns:1fr 1fr}
+      .ui-box{height:88px}
+      .floating-metric,.floating-chat{position:relative;inset:auto;right:auto;top:auto;bottom:auto;margin-top:12px;max-width:none}
+      .card,.contact-box,.pricing-card,.feature-showcase,.feature-item{padding:22px}
+      .template-info,.pricing-side,.pricing-main{padding:22px}
+      .contact-link{padding:16px}
+      .footer-grid{flex-direction:column;align-items:flex-start}
+    }
+    @media (max-width: 560px){
+      .brand{gap:10px;padding:6px 12px 6px 6px}
+      .brand strong{font-size:18px}
+      .brand small{font-size:10px}
+      .theme-toggle,.menu-btn{width:42px;height:42px}
+      .nav-actions{gap:8px}
+      .ui-grid{grid-template-columns:1fr}
+      .template-cover{padding:14px}
+      .template-body{padding:14px}
+      .map-placeholder{min-height:220px;padding:20px}
+      .pill{font-size:13px;padding:10px 12px}
     }
   </style>
 </head>
