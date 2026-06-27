@@ -5,7 +5,8 @@ Fichiers inclus :
 - robots.txt : fichier robots.
 
 Dernières corrections :
-- Version mobile reprise de A à Z : textes plus lisibles, sections mieux espacées, boutons plus grands, formulaires plus confortables, cartes plus aérées.
+- Menu déroulant mobile rendu opaque pour une lecture plus facile.
+- Version mobile optimisée : textes plus lisibles, sections mieux espacées, boutons plus grands, formulaire plus confortable.
 - Header et menu mobile optimisés.
 - Les logos sont intégrés directement dans le HTML en base64.
 - La section "Nos modèles" ne mentionne pas l'IA et utilise des visuels propres, non génératifs.

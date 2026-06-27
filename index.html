@@ -301,14 +301,17 @@
     .reveal.visible{opacity:1;transform:none}
     .mobile-panel{
       position:absolute;top:calc(var(--header) + 10px);left:0;right:0;z-index:90;
-      background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-strong);
-      padding:16px;backdrop-filter:blur(18px);
+      background:#ffffff;border:1px solid rgba(226,232,240,.95);border-radius:24px;box-shadow:0 28px 80px rgba(15,23,42,.22);
+      padding:16px;backdrop-filter:none;
       opacity:0;pointer-events:none;transform:translateY(-8px) scale(.98);transition:.25s ease;
     }
+    body.dark .mobile-panel{background:#0f172a;border-color:rgba(255,255,255,.12);box-shadow:0 28px 80px rgba(0,0,0,.45)}
     .mobile-panel.open{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
     .mobile-panel nav{display:grid;gap:8px}
-    .mobile-panel a{padding:14px 12px;border-radius:14px;font-weight:700;color:var(--text)}
-    .mobile-panel a:hover{background:rgba(37,99,235,.08)}
+    .mobile-panel a{padding:14px 12px;border-radius:14px;font-weight:800;color:var(--text);background:#f8fafc;border:1px solid #eef2f7}
+    body.dark .mobile-panel a{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10)}
+    .mobile-panel a:hover{background:#eff6ff;color:#2563eb}
+    body.dark .mobile-panel a:hover{background:rgba(37,99,235,.18);color:#93c5fd}
     .mobile-panel .mobile-cta{margin-top:10px;width:100%}
 
     @media (max-width: 1180px){
@@ -401,7 +404,8 @@
       .nav-actions{gap:7px}
       .nav-badge{width:48px !important;height:48px !important;min-width:48px !important;padding:5px !important;border-radius:14px !important}
       .theme-toggle,.menu-btn{width:44px;height:44px;border-radius:14px}
-      .mobile-panel{position:fixed;top:calc(var(--header) + 10px);left:14px;right:14px;max-height:calc(100dvh - var(--header) - 28px);overflow:auto;padding:14px;border-radius:22px}
+      .mobile-panel{position:fixed;top:calc(var(--header) + 10px);left:14px;right:14px;max-height:calc(100dvh - var(--header) - 28px);overflow:auto;padding:14px;border-radius:22px;background:#ffffff !important;backdrop-filter:none !important}
+      body.dark .mobile-panel{background:#0f172a !important}
       .mobile-panel nav{gap:6px}
       .mobile-panel a{min-height:50px;display:flex;align-items:center;padding:14px 14px;font-size:16px;font-weight:800;line-height:1.25}
 
