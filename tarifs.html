@@ -625,6 +625,15 @@ body.dark .nbox{background:#241c0a;border-color:#5c481c;color:#d9a648}
   *{transition:none !important;animation:none !important}
   .rev{opacity:1;transform:none}
 }
+
+/* --- options alignées (contrat sur mesure) --- */
+.optlist{list-style:none;display:block;margin:18px 0 24px;padding:0}
+.optlist li{display:flex;align-items:baseline;gap:10px;padding:8px 0;border-bottom:1px dotted var(--line);font-size:14px;line-height:1.5}
+.optlist li:last-child{border-bottom:none}
+.optlist .lbl{flex:1}
+.optlist .prc{font-weight:800;color:var(--blue);white-space:nowrap;font-variant-numeric:tabular-nums}
+.optlist .tuto{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.4px;color:#15803d;background:rgba(21,128,61,.12);border-radius:20px;padding:1px 8px;vertical-align:1px;margin-left:4px}
+@media(max-width:640px){.optlist li{font-size:13.5px;padding:7px 0}}
 </style>
 </head>
 <body>
@@ -670,20 +679,20 @@ body.dark .nbox{background:#241c0a;border-color:#5c481c;color:#d9a648}
       <article class="pc rev" style="border-width:2px">
         <span class="pbadge" style="background:var(--blue);color:#fff">Contrat évolutif</span>
         <h3>Contrat sur mesure</h3>
-        <p style="font-size:15px;margin-top:7px;opacity:.85;line-height:1.6">On part du Forfait Basic à 420 €, et vous ajoutez uniquement les options dont vous avez besoin. Les options marquées ✎ sont livrées avec un tutoriel pour être 100 % autonome.</p>
+        <p style="font-size:15px;margin-top:7px;opacity:.85;line-height:1.6">On part du Forfait Basic à 420 €, et vous ajoutez uniquement les options dont vous avez besoin. Les options marquées <span class="tuto">TUTO</span> sont livrées avec un tutoriel pour être 100 % autonome.</p>
         <div class="price" style="font-size:34px">420&thinsp;€ <span style="font-size:17px;font-weight:700;color:var(--blue)">+ vos options</span></div>
         <p class="mu" style="font-size:13px;margin-bottom:4px">Chaque option s'ajoute au prix de base · TVA non applicable</p>
-        <ul class="pl">
-          <li>Espace administrateur — gérez vos documents en autonomie ✎ · <strong>+320&thinsp;€</strong></li>
-          <li>Blog — publiez vos actualités vous-même ✎ · <strong>+250&thinsp;€</strong></li>
-          <li>Page supplémentaire · <strong>+50&thinsp;€/page</strong></li>
-          <li>Rédaction des textes des pages supplémentaires · <strong>+60&thinsp;€/page</strong></li>
-          <li>Formulaire avancé (devis en ligne, pièces jointes) · <strong>+120&thinsp;€</strong></li>
-          <li>Avis Google intégrés · <strong>+70&thinsp;€</strong></li>
-          <li>Galerie / portfolio avancé · <strong>+80&thinsp;€</strong></li>
-          <li>Pack référencement renforcé · <strong>+150&thinsp;€</strong></li>
-          <li>Création de logo (fichiers HD) · <strong>+150&thinsp;€</strong></li>
-          <li>Retouche / optimisation photos · <strong>+50&thinsp;€</strong></li>
+        <ul class="optlist">
+          <li><span class="lbl">Espace administrateur — gérez vos documents<span class="tuto">TUTO</span></span><span class="prc">+&thinsp;320&thinsp;€</span></li>
+          <li><span class="lbl">Blog — publiez vos actualités vous-même<span class="tuto">TUTO</span></span><span class="prc">+&thinsp;250&thinsp;€</span></li>
+          <li><span class="lbl">Pack référencement renforcé</span><span class="prc">+&thinsp;150&thinsp;€</span></li>
+          <li><span class="lbl">Création de logo (fichiers HD)</span><span class="prc">+&thinsp;150&thinsp;€</span></li>
+          <li><span class="lbl">Formulaire avancé (devis en ligne, pièces jointes)</span><span class="prc">+&thinsp;120&thinsp;€</span></li>
+          <li><span class="lbl">Galerie / portfolio avancé</span><span class="prc">+&thinsp;80&thinsp;€</span></li>
+          <li><span class="lbl">Avis Google intégrés</span><span class="prc">+&thinsp;70&thinsp;€</span></li>
+          <li><span class="lbl">Rédaction des textes des pages supplémentaires</span><span class="prc">+&thinsp;60&thinsp;€/page</span></li>
+          <li><span class="lbl">Page supplémentaire</span><span class="prc">+&thinsp;50&thinsp;€/page</span></li>
+          <li><span class="lbl">Retouche / optimisation photos</span><span class="prc">+&thinsp;50&thinsp;€</span></li>
         </ul>
         <a class="btn bp" href="contact.html" style="width:100%;height:54px;font-size:16px;border-radius:13px">Composer mon contrat</a>
       </article>
