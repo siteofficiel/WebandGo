@@ -1,0 +1,12 @@
+À copier à la racine du dépôt GitHub (avec vos pages HTML) :
+
+  favicon.ico
+  favicon.png
+  favicon-16x16.png
+  favicon-32x32.png
+  apple-touch-icon.png
+  android-chrome-192x192.png
+  android-chrome-512x512.png
+
+Les 7 pages HTML ont déjà les balises <link> mises à jour.
+Poussez le tout, puis Ctrl+F5. Google met parfois quelques jours à changer l’icône dans les résultats.
