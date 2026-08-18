@@ -1,12 +1,34 @@
 À copier à la racine du dépôt GitHub (avec vos pages HTML) :
 
-  favicon.ico
+  favicon.ico            <- NOUVEAU : icône Google Search (16/24/32/48/64 px)
   favicon.png
   favicon-16x16.png
   favicon-32x32.png
   apple-touch-icon.png
   android-chrome-192x192.png
   android-chrome-512x512.png
+  site.webmanifest       <- NOUVEAU : manifeste Android
+  logo.jpg               <- logo en fichier (l'en-tête l'utilise aussi en data-URI)
+  index.html
+  fonctionnalites.html
+  modeles.html
+  tarifs.html
+  preuve.html
+  contact.html
+  cgv.html
+  robots.txt
+  sitemap.xml
 
-Les 7 pages HTML ont déjà les balises <link> mises à jour.
-Poussez le tout, puis Ctrl+F5. Google met parfois quelques jours à changer l’icône dans les résultats.
+IMPORTANT (logo Google) :
+- Assurez-vous que favicon.ico est bien présent à la racine (c'était le fichier
+  manquant jusqu'ici).
+- Poussez tout, videz le cache (Ctrl+F5), puis vérifiez :
+  https://www.webetgo.fr/favicon.ico doit afficher le logo.
+- Google Search Console : demandez une nouvelle exploration de la page d'accueil
+  (Inspection d'URL -> Demander une indexation). Google met parfois plusieurs
+  jours à mettre à jour l'icône dans les résultats de recherche.
+
+Pages redessinées (identité Web et Go) :
+- palette bleu nuit / blanc / gris clair / bleu lumineux
+- plus aucun emoji, aucune section personnelle
+- menu : Accueil, Services, Réalisations, Tarifs, Contact + bouton "Demander un devis"

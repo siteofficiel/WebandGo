@@ -1,0 +1,21 @@
+{
+  "name": "Web et Go",
+  "short_name": "Web et Go",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0A1D3B",
+  "description": "Création de sites internet professionnels pour artisans, indépendants, associations et entreprises locales.",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
