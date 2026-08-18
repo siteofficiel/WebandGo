@@ -664,7 +664,7 @@ body.dark .nbox{background:#241c0a;border-color:#5c481c;color:#d9a648}
         <h2 class="rev">Parlons de<br>votre projet.</h2>
         <p class="lead rev" style="margin-top:12px">Vous avez un projet ou une question ? Envoyez-moi un message. Temps de réponse toujours sous 24 h.</p>
         <div class="cinfo rev">
-          <div class="cb"><strong>Gabriel LEGENTIL</strong><span class="mu">Fondateur de WebetGo</span></div>
+          <div class="cb"><strong>WebetGo</strong><span class="mu">Création de sites internet professionnels</span></div>
           <div class="cb"><strong>Email</strong><a href="mailto:webetgo022@gmail.com" class="mu" style="transition:color .18s;display:block">webetgo022@gmail.com</a></div>
           <div class="cb"><strong>Temps de réponse</strong><span class="mu">Moins de 24 h</span></div>
           <div class="cb"><strong>Ma zone</strong><span class="mu">Dinan, Évran et alentours · Côtes-d'Armor</span></div>
@@ -700,14 +700,14 @@ body.dark .nbox{background:#241c0a;border-color:#5c481c;color:#d9a648}
 
 <footer class="foot"><div class="wrap">
   <div class="fin">
-    <div class="fbrand"><strong>WebetGo</strong><p class="mu" style="font-size:14px;max-width:36ch;margin-top:4px">Votre site internet professionnel — par Gabriel LEGENTIL.</p></div>
+    <div class="fbrand"><strong>WebetGo</strong><p class="mu" style="font-size:14px;max-width:36ch;margin-top:4px">Création de sites internet professionnels, modernes et clairs.</p></div>
     <nav class="flinks">
       <a href="index.html">Accueil</a><a href="fonctionnalites.html">Ce que comprend le site</a>
       <a href="modeles.html">Réalisations</a><a href="tarifs.html">Tarifs</a>
       <a href="preuve.html">Zone</a><a href="contact.html">Contact</a><a href="cgv.html">CGV</a>
     </nav>
   </div>
-  <p class="fcop">© 2025 WebetGo — Gabriel LEGENTIL &nbsp;·&nbsp; TVA non applicable, art. 293 B du CGI</p>
+  <p class="fcop">© 2025 WebetGo &nbsp;·&nbsp; TVA non applicable, art. 293 B du CGI</p>
 </div></footer><script>
 (function(){
   var body=document.body,thBtn=document.getElementById('thBtn'),
@@ -725,7 +725,7 @@ body.dark .nbox{background:#241c0a;border-color:#5c481c;color:#d9a648}
   window.addEventListener('scroll',function(){if(navWrap)navWrap.classList.toggle('sc',window.scrollY>8);},{passive:true});
   if('IntersectionObserver'in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});document.querySelectorAll('.rev').forEach(function(el){io.observe(el);});}else{document.querySelectorAll('.rev').forEach(function(el){el.classList.add('in');});}
   var form=document.getElementById('cForm');
-  if(form)form.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(form);var sub=encodeURIComponent('Demande de contact \u2014 WebetGo');var bod=encodeURIComponent('Bonjour Gabriel,\n\nJe souhaite \u00e9changer au sujet de mon projet.\n\nPr\u00e9nom : '+d.get('prenom')+'\nNom : '+d.get('nom')+'\nEmail : '+d.get('email')+'\nProjet : '+d.get('besoin')+'\n\nMessage :\n'+d.get('message')+'\n\nMerci.');location.href='mailto:webetgo022@gmail.com?subject='+sub+'&body='+bod;});
+  if(form)form.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(form);var sub=encodeURIComponent('Demande de contact \u2014 WebetGo');var bod=encodeURIComponent('Bonjour WebetGo,\n\nJe souhaite \u00e9changer au sujet de mon projet.\n\nPr\u00e9nom : '+d.get('prenom')+'\nNom : '+d.get('nom')+'\nEmail : '+d.get('email')+'\nProjet : '+d.get('besoin')+'\n\nMessage :\n'+d.get('message')+'\n\nMerci.');location.href='mailto:webetgo022@gmail.com?subject='+sub+'&body='+bod;});
   document.querySelectorAll('.fb').forEach(function(btn){btn.addEventListener('click',function(){btn.closest('.filters').querySelectorAll('.fb').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');});});
 })();
 </script>
