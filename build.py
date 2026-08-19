@@ -82,7 +82,7 @@ def tete(titre, description, slug, schema="", og_image="assets/img/hero.webp",
     if precharger_hero:
         precharge = (
             '\n  <link rel="preload" as="image" href="assets/img/hero.webp" '
-            'imagesrcset="assets/img/hero-800.webp 900w, assets/img/hero.webp 1800w" '
+            'imagesrcset="assets/img/hero-800.webp 900w, assets/img/hero.webp 1600w" '
             'imagesizes="(max-width: 999px) 92vw, 46vw" fetchpriority="high">'
         )
     bloc_schema = f'\n  <script type="application/ld+json">{schema}</script>' if schema else ""

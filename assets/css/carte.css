@@ -2,8 +2,14 @@
    Web et Go — carte interactive (chargée uniquement sur la page À propos)
    --------------------------------------------------------------------------- */
 
+/* Leaflet monte jusqu'à z-index 1000 pour ses commandes et ses étiquettes,
+   alors que l'en-tête collée du site est à 100 : sans cloisonnement, la carte
+   passe par-dessus le menu au défilement. On isole donc tout le composant
+   dans son propre contexte d'empilement, sous l'en-tête. */
 .carte {
   position: relative;
+  z-index: 0;
+  isolation: isolate;
   border: 1px solid var(--trait);
   border-radius: var(--rayon);
   overflow: hidden;

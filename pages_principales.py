@@ -61,11 +61,11 @@ def page_accueil():
         <div class="hero__visuel">
           <div class="hero__photo" data-parallaxe="16">
             <img src="assets/img/hero.webp"
-                 srcset="assets/img/hero-800.webp 900w, assets/img/hero.webp 1800w"
+                 srcset="assets/img/hero-800.webp 900w, assets/img/hero.webp 1600w"
                  sizes="(max-width: 999px) 92vw, 46vw"
-                 width="1800" height="1004" fetchpriority="high" decoding="async"
-                 alt="Un site internet affiché sur un grand écran d'ordinateur et sur un
-                      téléphone, posés sur un bureau clair.">
+                 width="1600" height="1000" fetchpriority="high" decoding="async"
+                 alt="Un site internet vitrine affiché sur un grand écran d'ordinateur et
+                      repris sur un téléphone, posés sur un bureau clair.">
           </div>
           <span class="hero__etiquette"><i aria-hidden="true"></i>Sites livrés &amp; en ligne</span>
         </div>
