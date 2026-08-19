@@ -27,6 +27,7 @@
 <meta name="twitter:description" content="Design sur mesure, version mobile, optimisation Google, hébergement, formation et accompagnement : tout ce que comprend votre site internet avec Web et Go.">
 
 <style>
+
 /* ============================================================
    WEB ET GO — Design system
    Palette : bleu nuit, blanc, gris clair, bleu lumineux
@@ -92,23 +93,7 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .wrap{width:min(1160px,100% - 40px);margin-inline:auto}
 .sec{padding:72px 0}
 .sec-alt{background:var(--bg2)}
-.sec-navy{
-  background:var(--navy);
-  color:#fff;
-  position:relative;
-  overflow:hidden;
-}
-.sec-navy::before{
-  content:"";position:absolute;top:-220px;right:-180px;width:560px;height:560px;
-  background:radial-gradient(circle,rgba(29,91,255,.35),transparent 65%);
-  pointer-events:none;
-}
-.sec-navy::after{
-  content:"";position:absolute;bottom:-260px;left:-160px;width:520px;height:520px;
-  background:radial-gradient(circle,rgba(92,139,255,.18),transparent 65%);
-  pointer-events:none;
-}
-.sec-navy > *{position:relative;z-index:1}
+.sec-navy{background:var(--navy);color:#fff}
 
 /* ---------- TYPO ---------- */
 .ey{
@@ -140,13 +125,8 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
   transition:transform .2s var(--ease),box-shadow .25s,border-color .2s,background .2s,color .2s;
   white-space:nowrap;
 }
-.btn .arr{width:17px;height:17px;flex-shrink:0;transition:transform .25s var(--ease)}
-.btn:hover .arr{transform:translateX(4px)}
-.btn-p{
-  background:var(--blue);color:#fff;
-  box-shadow:0 10px 22px -8px rgba(29,91,255,.55);
-}
-.btn-p:hover{background:var(--blue-d);transform:translateY(-2px);box-shadow:0 16px 28px -10px rgba(29,91,255,.55)}
+.btn-p{background:var(--blue);color:#fff;box-shadow:0 6px 16px -8px rgba(29,91,255,.4)}
+.btn-p:hover{background:var(--blue-d);transform:translateY(-2px);box-shadow:0 10px 20px -10px rgba(29,91,255,.45)}
 .btn-p:active{transform:translateY(0)}
 .btn-o{background:transparent;border-color:var(--line2);color:var(--ink)}
 .btn-o:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
@@ -227,35 +207,11 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .drawer-mail a{color:var(--blue);font-weight:600}
 
 /* ---------- PAGE HERO (pages internes) ---------- */
-.page-hero{padding:52px 0 32px;position:relative;overflow:hidden}
-.page-hero::before{
-  content:"";position:absolute;top:-200px;right:-160px;width:520px;height:520px;
-  background:radial-gradient(circle,rgba(29,91,255,.10),transparent 65%);
-  pointer-events:none;
-}
-.page-hero .wrap{position:relative}
+.page-hero{padding:52px 0 32px}
 .page-hero h1{max-width:740px;margin-bottom:12px}
 
 /* ---------- HERO (accueil) ---------- */
-.hero{position:relative;overflow:hidden;padding:52px 0 84px}
-.hero::before{
-  content:"";position:absolute;top:-260px;right:-200px;width:720px;height:720px;
-  background:radial-gradient(circle,rgba(29,91,255,.12),transparent 62%);
-  pointer-events:none;
-}
-.hero::after{
-  content:"";position:absolute;bottom:-240px;left:-220px;width:640px;height:640px;
-  background:radial-gradient(circle,rgba(92,139,255,.10),transparent 62%);
-  pointer-events:none;
-}
-.hero-dots{
-  position:absolute;top:40px;right:0;width:340px;height:340px;opacity:.55;
-  background-image:radial-gradient(var(--line2) 1.4px,transparent 1.4px);
-  background-size:22px 22px;
-  -webkit-mask-image:radial-gradient(circle at 30% 30%,#000 0%,transparent 70%);
-  mask-image:radial-gradient(circle at 30% 30%,#000 0%,transparent 70%);
-  pointer-events:none;
-}
+.hero{padding:52px 0 84px;overflow:hidden}
 .hg{display:grid;grid-template-columns:1.06fr .94fr;gap:44px;align-items:center;position:relative}
 .hc .lead{font-size:clamp(15.5px,1.5vw,17.5px)}
 .hc h1{margin-bottom:14px}
@@ -266,7 +222,6 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
   padding:9px 15px;border-radius:999px;
   background:#fff;border:1px solid var(--line);
   font-size:13.5px;font-weight:600;color:var(--ink);
-  box-shadow:var(--shadow-s);
 }
 .pill svg{width:16px;height:16px;color:var(--blue);flex-shrink:0}
 .pill .price{color:var(--blue);font-weight:700}
@@ -301,10 +256,6 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .mk-hero{
   background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#1B3F7E 100%);
   border-radius:12px;padding:16px;color:#fff;margin-bottom:10px;position:relative;overflow:hidden;
-}
-.mk-hero::after{
-  content:"";position:absolute;top:-40px;right:-30px;width:140px;height:140px;
-  background:radial-gradient(circle,rgba(29,91,255,.5),transparent 65%);
 }
 .mk-hero h4{font-size:14.5px;line-height:1.3;letter-spacing:-.01em;color:#fff;max-width:75%;margin-bottom:6px}
 .mk-hero p{font-size:10.5px;color:rgba(255,255,255,.7);max-width:70%;line-height:1.5;margin-bottom:12px}
@@ -343,7 +294,7 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .chip .n{font-family:var(--f-d);font-size:21px;font-weight:700;letter-spacing:-.02em;color:var(--navy)}
 .chip svg{width:30px;height:30px;padding:7px;border-radius:9px;background:var(--sky);color:var(--blue);flex-shrink:0}
 .chip-1{top:-14px;right:6px}
-.chip-2{bottom:-10px;left:-14px;animation:float 6s ease-in-out 1s infinite}
+.chip-2{bottom:-10px;left:-14px}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 
 /* ---------- PROBLÈME / SOLUTION ---------- */
@@ -357,11 +308,6 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 }
 .ps-bad .ps-tag{background:var(--bg2);color:var(--muted);border:1px solid var(--line)}
 .ps-good{background:var(--navy);border:none;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-l)}
-.ps-good::after{
-  content:"";position:absolute;top:-140px;right:-120px;width:340px;height:340px;
-  background:radial-gradient(circle,rgba(29,91,255,.4),transparent 65%);
-}
-.ps-good > *{position:relative;z-index:1}
 .ps-good .ps-tag{background:rgba(255,255,255,.12);color:#fff}
 .ps-good h2{color:#fff;font-size:clamp(1.3rem,2.1vw,1.7rem);margin-bottom:12px}
 .ps-good .lead{color:rgba(255,255,255,.82)}
@@ -377,38 +323,26 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .ps-good li{color:rgba(255,255,255,.92)}
 .ps-good .btn{margin-top:20px}
 
-/* ---------- SERVICES ---------- */
-.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.svc{
-  background:#fff;border:1px solid var(--line);border-radius:var(--r-l);
-  padding:24px 22px;
-  transition:transform .28s var(--ease),box-shadow .28s,border-color .28s;
-  display:flex;flex-direction:column;
-}
-.svc:hover{transform:translateY(-6px);border-color:var(--sky2);box-shadow:var(--shadow-l)}
-.svc .ic{
-  width:46px;height:46px;border-radius:13px;
-  background:var(--sky);color:var(--blue);
-  display:grid;place-items:center;margin-bottom:14px;
-  transition:background .25s,color .25s;
-}
-.svc .ic svg{width:24px;height:24px}
-.svc:hover .ic{background:var(--blue);color:#fff}
-.svc h3{font-size:16px;margin-bottom:6px}
-.svc p{font-size:13.5px;color:var(--muted);line-height:1.58;flex:1}
-.svc .tag{
-  align-self:flex-start;padding:4px 10px;border-radius:7px;
-  background:var(--bg2);border:1px solid var(--line);
-  font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted2);
-  margin-bottom:14px;
-}
-.svc .tag.tuto{color:var(--blue);background:var(--sky);border-color:transparent}
+/* ---------- SERVICES (grille éditoriale) ---------- */
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);column-gap:30px;row-gap:26px}
+.srv{border-top:1px solid var(--line);padding-top:16px}
+.srv h3{display:flex;align-items:center;gap:10px;font-size:16px;margin-bottom:6px}
+.srv h3 svg{width:18px;height:18px;color:var(--blue);flex-shrink:0}
+.srv p{font-size:13.5px;color:var(--muted);line-height:1.6;max-width:36ch}
+
+/* Liste d'inclusions (cochée) */
+.ck-list{display:grid;grid-template-columns:1fr 1fr;gap:18px 32px;margin-top:4px}
+.ck{display:flex;gap:12px;align-items:flex-start}
+.ck .ic{width:22px;height:22px;border-radius:7px;background:var(--sky);color:var(--blue);display:grid;place-items:center;flex-shrink:0;margin-top:2px}
+.ck .ic svg{width:12px;height:12px}
+.ck strong{display:block;font-size:15px;font-weight:600;margin-bottom:2px}
+.ck small{font-size:13.5px;color:var(--muted);line-height:1.55}
 
 /* Bandeau engagements (compact) */
 .eng-strip{
   display:grid;grid-template-columns:repeat(3,1fr);
   margin-top:26px;background:#fff;border:1px solid var(--line);
-  border-radius:var(--r-l);padding:4px;box-shadow:var(--shadow-s);
+  border-radius:var(--r-l);padding:4px;
 }
 .eng-item{display:flex;gap:12px;align-items:flex-start;padding:14px 18px;border-right:1px solid var(--line)}
 .eng-item:last-child{border-right:none}
@@ -418,22 +352,11 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .eng-item small{font-size:12.5px;color:var(--muted);line-height:1.5}
 
 /* ---------- FONCTIONNEMENT ---------- */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
 .steps-3{grid-template-columns:repeat(3,1fr)}
-.step{position:relative;padding-right:10px}
-.step:not(:last-child)::after{
-  content:"";position:absolute;top:22px;left:calc(50% + 28px);right:-10px;
-  border-top:2px dashed var(--line2);
-}
-.step-n{
-  width:42px;height:42px;border-radius:50%;
-  background:#fff;border:1.5px solid var(--sky2);color:var(--blue);
-  font-family:var(--f-d);font-size:15px;font-weight:700;
-  display:grid;place-items:center;margin-bottom:12px;position:relative;z-index:1;
-  transition:background .25s,color .25s,border-color .25s,transform .25s var(--ease);
-}
-.step:hover .step-n{background:var(--blue);border-color:var(--blue);color:#fff;transform:scale(1.08)}
-.step h3{font-size:14.5px;margin-bottom:5px}
+.step{border-top:2px solid var(--line);padding-top:14px}
+.step-n{display:block;font-family:var(--f-d);font-size:30px;font-weight:700;letter-spacing:-.03em;color:var(--blue2);line-height:1;margin-bottom:8px}
+.step h3{font-size:15px;margin-bottom:5px}
 .step p{font-size:13px;color:var(--muted);line-height:1.55}
 
 /* ---------- RÉALISATIONS ---------- */
@@ -443,7 +366,7 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
   overflow:hidden;display:flex;flex-direction:column;
   transition:transform .28s var(--ease),box-shadow .28s,border-color .28s;
 }
-.proj:hover{transform:translateY(-6px);box-shadow:var(--shadow-l);border-color:var(--sky2)}
+.proj:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);border-color:var(--sky2)}
 .shot{
   position:relative;padding:22px 22px 0;
   height:182px;display:flex;align-items:flex-end;overflow:hidden;
@@ -504,11 +427,6 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
   box-shadow:var(--shadow-l);
   display:flex;flex-direction:column;
 }
-.price-card::after{
-  content:"";position:absolute;top:-160px;right:-120px;width:380px;height:380px;
-  background:radial-gradient(circle,rgba(29,91,255,.45),transparent 65%);
-}
-.price-card > *{position:relative;z-index:1}
 .p-ey{
   display:inline-flex;align-items:center;gap:8px;align-self:flex-start;
   padding:6px 13px;border-radius:999px;
@@ -549,9 +467,8 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 }
 .opt-card .btn{margin-top:14px;width:100%}
 .opt-links{display:flex;gap:14px;margin-top:12px;flex-wrap:wrap}
-.opt-links a{font-size:13px;font-weight:600;color:var(--blue);display:inline-flex;align-items:center;gap:6px}
-.opt-links a:hover{text-decoration:underline}
-.opt-links a svg{width:14px;height:14px}
+.opt-links a{font-size:13.5px;font-weight:500;color:var(--blue);transition:color .2s}
+.opt-links a:hover{color:var(--blue-d);text-decoration:underline;text-underline-offset:3px}
 /* ---------- FAQ ---------- */
 .faq{max-width:1020px;margin-inline:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}
 details{
@@ -567,21 +484,14 @@ summary{
   user-select:none;
 }
 summary::-webkit-details-marker{display:none}
-summary::after{
-  content:"+";flex-shrink:0;
-  width:32px;height:32px;border-radius:10px;
-  background:var(--bg2);color:var(--blue);
-  display:grid;place-items:center;
-  font-family:var(--f-d);font-size:19px;font-weight:600;line-height:1;
-  transition:transform .28s var(--ease),background .25s,color .25s;
-}
-details[open] summary::after{transform:rotate(45deg);background:var(--blue);color:#fff}
+summary::after{content:"+";flex-shrink:0;font-family:var(--f-d);font-size:20px;font-weight:500;color:var(--blue);line-height:1;width:20px;text-align:center;transition:transform .25s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
 .faq-a{padding:0 18px 16px;font-size:13.5px;color:var(--muted);line-height:1.65;max-width:70ch}
 .faq-a a{color:var(--blue);font-weight:600}
 .faq-a a:hover{text-decoration:underline}
 .faq-more{text-align:center;margin-top:18px;font-size:14px;color:var(--muted)}
-.faq-more a{color:var(--blue);font-weight:600}
-.faq-more a:hover{text-decoration:underline}
+.faq-more a{color:var(--blue);font-weight:500;transition:color .2s}
+.faq-more a:hover{color:var(--blue-d);text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- CTA FINAL ---------- */
 .cta-final{padding:52px 0}
@@ -610,9 +520,9 @@ details[open] summary::after{transform:rotate(45deg);background:var(--blue);colo
 .cinfo{display:grid;gap:14px}
 .cb{
   display:flex;gap:14px;align-items:flex-start;
-  background:#fff;border:1px solid var(--line);border-radius:var(--r-m);
-  padding:14px 16px;box-shadow:var(--shadow-s);
+  padding:14px 0;border-bottom:1px solid var(--line);
 }
+.cb:last-child{border-bottom:none}
 .cb .ic{width:40px;height:40px;border-radius:12px;background:var(--sky);color:var(--blue);display:grid;place-items:center;flex-shrink:0}
 .cb .ic svg{width:21px;height:21px}
 .cb strong{display:block;font-size:14.5px;font-weight:600;margin-bottom:2px}
@@ -717,10 +627,9 @@ input::placeholder,textarea::placeholder{color:var(--muted2)}
   .hm{max-width:520px;margin-inline:auto;width:100%}
   .chip-1{right:-4px}
   .chip-2{left:-4px}
-  .g3{grid-template-columns:1fr 1fr}
+  .srv-grid{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr;gap:26px 18px}
   .steps-3{grid-template-columns:1fr 1fr;gap:26px 18px}
-  .step:nth-child(2)::after{display:none}
   .pw,.cgrid,.zgrid{grid-template-columns:1fr}
   .ps{grid-template-columns:1fr}
   .te-grid{grid-template-columns:1fr}
@@ -744,11 +653,12 @@ input::placeholder,textarea::placeholder{color:var(--muted2)}
   .hctas .btn{width:100%}
   .hbadges{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .pill{padding:8px 12px;font-size:12.5px;justify-content:center}
-  .g2,.g3{grid-template-columns:1fr;gap:12px}
-  .steps{grid-template-columns:1fr;gap:0}
-  .step{padding:0 0 16px 0}
-  .step:not(:last-child)::after{left:21px;top:40px;bottom:-4px;right:auto;border-top:none;border-left:2px dashed var(--line2)}
-  .step-n{margin-bottom:10px}
+  .g2{grid-template-columns:1fr;gap:12px}
+  .srv-grid{grid-template-columns:1fr;row-gap:18px}
+  .ck-list{grid-template-columns:1fr;gap:16px}
+  .steps{grid-template-columns:1fr;gap:16px}
+  .step{padding-top:12px}
+  .step-n{font-size:24px}
   .ps-card{padding:20px 18px}
   .price-card{padding:24px 20px}
   .opt-card{padding:20px 18px}
@@ -790,6 +700,7 @@ input::placeholder,textarea::placeholder{color:var(--muted2)}
   html{scroll-behavior:auto}
   .rev{opacity:1;transform:none}
 }
+
 
 </style>
 </head>
@@ -839,50 +750,43 @@ input::placeholder,textarea::placeholder{color:var(--muted2)}
   <div class="wrap">
     <p class="ey rev">Services</p>
     <h1 class="rev">Ce que comprend votre site</h1>
-    <p class="lead rev d1">Le Forfait Basic à 420&nbsp;€ couvre l'essentiel. Besoin de plus ? Composez votre contrat sur mesure en ajoutant uniquement les options qui vous servent. Zéro abonnement, dans tous les cas.</p>
+    <p class="lead rev">Le Forfait Basic à 420&nbsp;€ inclut tout l'essentiel. Pour aller plus loin, ajoutez uniquement les options qui vous servent — zéro abonnement, dans tous les cas.</p>
   </div>
 </section>
 
 <!-- ============ FORFAIT BASIC ============ -->
-<section class="sec" style="padding-top:48px">
+<section class="sec" style="padding-top:40px">
   <div class="wrap">
     <div class="sh rev">
-      <p class="ey">Forfait Basic — 420 €</p>
-      <h2>Tout ce qui est inclus dès le départ</h2>
+      <p class="ey">Forfait Basic — 420&nbsp;€</p>
+      <h2>Ce qui est inclus, point par point</h2>
     </div>
-    <div class="g3">
-      <article class="svc rev">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
-        <h3>Un design fait pour vous</h3>
-        <p>Des pages conçues pour votre métier, vos couleurs, vos photos et vos clients. Rien de générique.</p>
-      </article>
-      <article class="svc rev d1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M2 9h20"/></svg></span>
-        <h3>Beau sur téléphone et ordinateur</h3>
-        <p>Un affichage parfait sur tous les écrans, vérifié avant la livraison de votre site.</p>
-      </article>
-      <article class="svc rev d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
-        <h3>Aide à la rédaction</h3>
-        <p>Des textes clairs qui présentent vos services et donnent envie de vous contacter.</p>
-      </article>
-      <article class="svc rev">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
-        <h3>Trouvable sur Google</h3>
-        <p>Une structure propre et des informations bien organisées pour votre présence en ligne.</p>
-      </article>
-      <article class="svc rev d1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <h3>Livré en règle (RGPD)</h3>
-        <p>Cookies, mentions légales et conformité RGPD : votre site est livré en règle.</p>
-      </article>
-      <article class="svc rev d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></svg></span>
-        <h3>Formation incluse</h3>
-        <p>Un tutoriel PDF et une formation pour gérer votre site en toute autonomie.</p>
-      </article>
+    <div class="ck-list rev">
+      <div class="ck">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span><strong>Un design fait pour vous</strong><br><small>Des pages conçues pour votre métier, vos couleurs et vos clients.</small></span>
+      </div>
+      <div class="ck">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span><strong>Beau sur téléphone et ordinateur</strong><br><small>Un affichage parfait sur tous les écrans, vérifié avant la livraison.</small></span>
+      </div>
+      <div class="ck">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span><strong>Aide à la rédaction</strong><br><small>Des textes clairs qui présentent vos services et donnent envie de vous contacter.</small></span>
+      </div>
+      <div class="ck">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span><strong>Trouvable sur Google</strong><br><small>Une structure propre pour être bien présent en ligne.</small></span>
+      </div>
+      <div class="ck">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span><strong>Livré en règle (RGPD)</strong><br><small>Cookies et mentions légales : votre site est conforme.</small></span>
+      </div>
+      <div class="ck">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span><strong>Formation incluse</strong><br><small>Un tutoriel PDF pour gérer votre site en toute autonomie.</small></span>
+      </div>
     </div>
-
     <div class="eng-strip rev">
       <div class="eng-item">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>
@@ -901,69 +805,30 @@ input::placeholder,textarea::placeholder{color:var(--muted2)}
 </section>
 
 <!-- ============ OPTIONS ============ -->
-<section class="sec" id="options">
+<section class="sec sec-alt" id="options" style="padding-top:56px">
   <div class="wrap">
-    <div class="sh rev">
-      <p class="ey">Contrat sur mesure</p>
-      <h2>Les options, pour aller plus loin</h2>
-      <p class="lead">On part du Forfait Basic à 420&nbsp;€, puis vous ajoutez uniquement ce dont vous avez besoin. Chaque option est détaillée dans votre devis, ligne par ligne.</p>
-    </div>
-    <div class="g3">
-      <article class="svc rev">
-        <span class="tag tuto">Tutoriel inclus</span>
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>
-        <h3>Espace administrateur</h3>
-        <p>Gérez vos documents et vos contenus vous-même, sans toucher au code. <strong>+320&nbsp;€</strong></p>
-      </article>
-      <article class="svc rev d1">
-        <span class="tag tuto">Tutoriel inclus</span>
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4z" style="opacity:0"/><path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
-        <h3>Blog / actualités</h3>
-        <p>Publiez vos actualités vous-même pour animer votre site. <strong>+250&nbsp;€</strong></p>
-      </article>
-      <article class="svc rev d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="m9 3 3 2 3-2"/></svg></span>
-        <h3>Création de logo</h3>
-        <p>Un logo simple et professionnel, livré en fichiers haute définition. <strong>+150&nbsp;€</strong></p>
-      </article>
-      <article class="svc rev">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h3v3H8zM13 13h3"/></svg></span>
-        <h3>Formulaire avancé</h3>
-        <p>Devis en ligne, pièces jointes : un formulaire sur mesure pour votre activité. <strong>+120&nbsp;€</strong></p>
-      </article>
-      <article class="svc rev d1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
-        <h3>Galerie / portfolio avancé</h3>
-        <p>Une galerie filtrable pour mettre en valeur vos réalisations. <strong>+80&nbsp;€</strong></p>
-      </article>
-      <article class="svc rev d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 14.5 7.5 20 8l-4 3.9 1 6.1-5-2.8-5 2.8 1-6.1L4 8l5.5-.5Z"/></svg></span>
-        <h3>Avis Google intégrés</h3>
-        <p>Affichez les avis de vos clients directement sur votre site. <strong>+70&nbsp;€</strong></p>
-      </article>
-      <article class="svc rev">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
-        <h3>Rédaction des textes</h3>
-        <p>Des contenus rédigés pour vos pages supplémentaires. <strong>+60&nbsp;€/page</strong></p>
-      </article>
-      <article class="svc rev d1">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h6"/><path d="M15 2v5h5"/><path d="M15 22v-4h4"/></svg></span>
-        <h3>Page supplémentaire</h3>
-        <p>Une page de plus pour présenter un service ou une activité. <strong>+50&nbsp;€/page</strong></p>
-      </article>
-      <article class="svc rev d2">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 9-4 9 4-9 4Z"/><path d="M9 9.2 3 12v5l6-3z" style="opacity:0"/><path d="m3 17 9 4 9-4"/><path d="M3 12l9 4 9-4"/><path d="M12 3v18"/></svg></span>
-        <h3>Retouche / optimisation photos</h3>
-        <p>Des photos retravaillées pour un rendu professionnel. <strong>+50&nbsp;€</strong></p>
-      </article>
-    </div>
-    <div class="te-note rev" style="max-width:760px;margin:36px auto 0">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
-      <span>Après la mise en ligne, les modifications sont facturées <strong>40&nbsp;€ de l'heure</strong> sur devis gratuit (1&nbsp;h minimum). Besoin régulier ? Le carnet de 5&nbsp;h prépayées à <strong>180&nbsp;€</strong> est plus avantageux.</span>
-    </div>
-    <div class="opt-links rev" style="justify-content:center;margin-top:22px">
-      <a href="tarifs.html">Voir la page Tarifs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
-      <a href="documents/grille-tarifaire-webetgo.pdf" download>Télécharger la grille tarifaire (PDF) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></a>
+    <div style="max-width:860px;margin-inline:auto">
+      <div class="sh rev">
+        <p class="ey">Contrat sur mesure</p>
+        <h2>Les options, si vous en avez besoin</h2>
+        <p class="lead">On part du Forfait Basic à 420&nbsp;€, puis vous ajoutez uniquement ce qui vous sert. Devis détaillé ligne par ligne.</p>
+      </div>
+      <ul class="opts rev">
+        <li class="opt"><span class="nm">Espace administrateur — gérez vos documents<small>TUTO — tutoriel inclus</small></span><span class="pr">+320&nbsp;€</span></li>
+        <li class="opt"><span class="nm">Blog — publiez vos actualités vous-même<small>TUTO — tutoriel inclus</small></span><span class="pr">+250&nbsp;€</span></li>
+        <li class="opt"><span class="nm">Création de logo<small>Fichiers haute définition</small></span><span class="pr">+150&nbsp;€</span></li>
+        <li class="opt"><span class="nm">Formulaire avancé<small>Devis en ligne, pièces jointes</small></span><span class="pr">+120&nbsp;€</span></li>
+        <li class="opt"><span class="nm">Galerie / portfolio avancé</span><span class="pr">+80&nbsp;€</span></li>
+        <li class="opt"><span class="nm">Avis Google intégrés</span><span class="pr">+70&nbsp;€</span></li>
+        <li class="opt"><span class="nm">Rédaction des textes des pages supplémentaires</span><span class="pr">+60&nbsp;€/page</span></li>
+        <li class="opt"><span class="nm">Page supplémentaire</span><span class="pr">+50&nbsp;€/page</span></li>
+        <li class="opt"><span class="nm">Retouche / optimisation photos</span><span class="pr">+50&nbsp;€</span></li>
+      </ul>
+      <p class="opt-note rev" style="margin-top:16px">Après la mise en ligne, les modifications sont facturées <strong>40&nbsp;€ de l'heure</strong>, sur devis gratuit (1&nbsp;h minimum). Besoin régulier ? Le carnet de <strong>5&nbsp;h prépayées à 180&nbsp;€</strong> est plus avantageux.</p>
+      <div class="opt-links rev" style="justify-content:center;margin-top:18px">
+        <a href="tarifs.html">Voir la page Tarifs </a>
+        <a href="documents/grille-tarifaire-webetgo.pdf" download>Télécharger la grille tarifaire (PDF) </a>
+      </div>
     </div>
   </div>
 </section>
@@ -975,13 +840,14 @@ input::placeholder,textarea::placeholder{color:var(--muted2)}
     <p>Expliquez-nous votre projet et recevez un devis gratuit et détaillé.</p>
     <a class="btn btn-l btn-lg" href="contact.html">
       Demander mon devis
-      <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      
     </a>
     <p class="cta-mail">Ou écrivez-nous directement : <a href="mailto:webetgo022@gmail.com">webetgo022@gmail.com</a></p>
   </div>
 </section>
 
 </main>
+
 
 <footer class="foot">
   <div class="wrap">
