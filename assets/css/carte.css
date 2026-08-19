@@ -1,0 +1,151 @@
+/* ---------------------------------------------------------------------------
+   Web et Go — carte interactive (chargée uniquement sur la page À propos)
+   --------------------------------------------------------------------------- */
+
+.carte {
+  position: relative;
+  border: 1px solid var(--trait);
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: var(--papier);
+}
+
+/* --- Écran d'attente avant chargement (aucune requête tierce) ------------- */
+.carte__ecran {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  min-height: 380px;
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(20, 24, 28, .72), rgba(20, 24, 28, .72)),
+    url("../img/region.webp") center / cover no-repeat;
+}
+
+/* Le bloc vit dans une section sombre : on fixe les couleurs explicitement
+   pour ne dépendre d'aucun héritage. */
+.carte__titre.carte__titre {
+  font-family: var(--titre, "Fraunces", Georgia, serif);
+  font-size: 1.2rem;
+  color: var(--ivoire);
+  margin: 0;
+}
+
+.carte__note.carte__note {
+  max-width: 36ch;
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.55;
+  color: rgba(247, 244, 238, .82);
+}
+
+/* Bouton bien détaché du fond sombre */
+.carte__ecran .btn.btn--accent {
+  background: var(--bleu-clair);
+  border-color: var(--bleu-clair);
+  color: #FFF;
+}
+
+.carte__ecran .btn.btn--accent:hover {
+  background: #3A8598;
+  border-color: #3A8598;
+}
+
+.carte__ecran .btn.btn--accent[disabled] {
+  opacity: .65;
+  cursor: progress;
+}
+
+/* Sans JavaScript, le bouton ne peut rien faire : on le masque au profit
+   d'un lien vers une carte externe. */
+.carte__repli { display: none; margin: 0; }
+.sans-js .carte__ecran .btn { display: none; }
+.sans-js .carte__repli { display: block; }
+.sans-js .carte__repli .lien-fleche { color: #8FC0CD; }
+
+.carte__erreur.carte__erreur {
+  margin: 0;
+  font-size: .85rem;
+  color: #F0B7A4;
+}
+
+/* --- Zone de carte -------------------------------------------------------- */
+.carte__toile {
+  height: 420px;
+  width: 100%;
+  background: var(--ivoire);
+}
+
+.carte__toile:focus-visible {
+  outline: 2px solid var(--bleu-clair);
+  outline-offset: -2px;
+}
+
+@media (max-width: 640px) {
+  .carte__toile { height: 340px; }
+  .carte__ecran { min-height: 320px; }
+}
+
+/* --- Habillage Leaflet aux couleurs du site ------------------------------- */
+.carte .leaflet-container {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  background: var(--ivoire);
+}
+
+.carte .leaflet-popup-content-wrapper,
+.carte .leaflet-tooltip {
+  border-radius: var(--rayon);
+  color: var(--encre);
+  background: var(--papier);
+  box-shadow: 0 6px 22px rgba(20, 24, 28, .14);
+}
+
+.carte .leaflet-popup-content {
+  margin: .7rem .95rem;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.carte .leaflet-popup-tip { background: var(--papier); }
+
+.carte .leaflet-tooltip {
+  border: 1px solid var(--trait);
+  font-size: .8rem;
+  padding: .25rem .5rem;
+}
+
+.carte .leaflet-tooltip::before { display: none; }
+
+/* Étiquette permanente de Dinan */
+.carte .carte__etiq--pole {
+  font-weight: 600;
+  color: var(--encre);
+  border-color: var(--bleu);
+  box-shadow: 0 2px 10px rgba(20, 24, 28, .12);
+}
+
+.carte .leaflet-bar a {
+  color: var(--encre);
+  background: var(--papier);
+  border-bottom-color: var(--trait);
+}
+
+.carte .leaflet-bar a:hover { background: var(--bleu-pale); }
+
+.carte .leaflet-control-attribution {
+  background: rgba(252, 250, 246, .9);
+  color: var(--gris-chaud);
+  font-size: .68rem;
+}
+
+.carte .leaflet-control-attribution a { color: var(--bleu); }
+
+@media (prefers-reduced-motion: reduce) {
+  .carte .leaflet-fade-anim .leaflet-tile,
+  .carte .leaflet-zoom-anim .leaflet-zoom-animated {
+    transition: none !important;
+  }
+}

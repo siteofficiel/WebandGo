@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr" class="sans-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.remove('sans-js');</script>
+  <title>Création de site internet — ce qui est compris | Web et Go</title>
+  <meta name="description" content="Le détail de la création d'un site internet par Web et Go : design sur mesure, responsive, mise en ligne, nom de domaine, HTTPS, SEO de base, RGPD, formation. Forfait Basic à 420 €, options à la carte.">
+  <link rel="canonical" href="https://www.webetgo.fr/creation-de-site.html">
+  <meta name="author" content="Gabriel LEGENTIL — Web et Go">
+  <meta name="theme-color" content="#14181C">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Web et Go">
+  <meta property="og:title" content="Création de site internet — ce qui est compris | Web et Go">
+  <meta property="og:description" content="Le détail de la création d'un site internet par Web et Go : design sur mesure, responsive, mise en ligne, nom de domaine, HTTPS, SEO de base, RGPD, formation. Forfait Basic à 420 €, options à la carte.">
+  <meta property="og:url" content="https://www.webetgo.fr/creation-de-site.html">
+  <meta property="og:image" content="https://www.webetgo.fr/assets/img/craft.webp">
+  <meta property="og:image:alt" content="Web et Go — création de sites internet professionnels à Dinan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Création de site internet — ce qui est compris | Web et Go">
+  <meta name="twitter:description" content="Le détail de la création d'un site internet par Web et Go : design sur mesure, responsive, mise en ligne, nom de domaine, HTTPS, SEO de base, RGPD, formation. Forfait Basic à 420 €, options à la carte.">
+  <meta name="twitter:image" content="https://www.webetgo.fr/assets/img/craft.webp">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Fraunces-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/InstrumentSans-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://www.webetgo.fr/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Création de site",
+      "item": "https://www.webetgo.fr/creation-de-site.html"
+    }
+  ]
+}</script>
+</head>
+<body>
+  <a class="evitement" href="#contenu">Aller au contenu principal</a>
+  <header class="entete entete--transparent" data-entete data-entete-clair>
+    <div class="entete__interieur">
+      <a class="marque" href="index.html" aria-label="Web et Go — retour à l'accueil">
+        <span class="marque__sigle">
+          <img class="marque__logo marque__logo--sombre" src="assets/img/logo-mono.png"
+               width="123" height="96" alt="" aria-hidden="true" decoding="async">
+          <img class="marque__logo marque__logo--clair" src="assets/img/logo-mono-clair.png"
+               width="123" height="96" alt="" aria-hidden="true" decoding="async">
+        </span>
+        <span class="marque__texte">Web <em>et</em> Go</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+          <a class="nav__lien" href="index.html">Accueil</a>
+          <a class="nav__lien" href="creation-de-site.html" aria-current="page">Création de site</a>
+          <a class="nav__lien" href="realisations.html">Réalisations</a>
+          <a class="nav__lien" href="tarifs.html">Tarifs</a>
+          <a class="nav__lien" href="a-propos.html">À propos</a>
+          <a class="nav__lien" href="contact.html">Contact</a>
+      </nav>
+      <div class="entete__actions">
+        <a class="btn btn--fantome" href="contact.html">Parlons de votre projet</a>
+        <button class="hamburger" type="button" data-menu-bouton
+                aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="panneau" id="menu-mobile" data-menu-panneau>
+    <nav class="panneau__nav" aria-label="Navigation mobile">
+        <a class="panneau__lien" href="index.html" style="--i:0"><span>01</span>Accueil</a>
+        <a class="panneau__lien" href="creation-de-site.html" style="--i:1" aria-current="page"><span>02</span>Création de site</a>
+        <a class="panneau__lien" href="realisations.html" style="--i:2"><span>03</span>Réalisations</a>
+        <a class="panneau__lien" href="tarifs.html" style="--i:3"><span>04</span>Tarifs</a>
+        <a class="panneau__lien" href="a-propos.html" style="--i:4"><span>05</span>À propos</a>
+        <a class="panneau__lien" href="contact.html" style="--i:5"><span>06</span>Contact</a>
+    </nav>
+    <div class="panneau__pied">
+      <a class="btn btn--accent" href="contact.html">Parlons de votre projet</a>
+      <p class="panneau__contact">
+        Écrivez directement à <a href="mailto:webetgo022@gmail.com">webetgo022@gmail.com</a><br>
+        Réponse sous 24&nbsp;h · Dinan, Évran et alentours
+      </p>
+    </div>
+  </div>
+  <section class="bandeau">
+    <div class="conteneur bandeau__contenu">
+      <ol class="fil" aria-label="Fil d'Ariane">
+        <li><a href="index.html">Accueil</a></li><li><span aria-current="page">Création de site</span></li>
+      </ol>
+      <h1>Ce que comprend votre site.</h1>
+      <p class="chapo">Le Forfait Basic à 420 € inclut tout l'essentiel, de la conception à la mise en ligne. Pour aller plus loin, vous ajoutez uniquement les options qui vous servent — zéro abonnement, dans tous les cas.</p>
+      <div class="groupe-btn" style="margin-top:2rem">
+        <a class="btn" href="contact.html">Demander mon devis</a>
+        <a class="btn btn--fantome" href="tarifs.html">Voir les tarifs</a>
+      </div>
+    </div>
+  </section>
+  <section class="reassurance" aria-label="Ce qui est compris dans chaque site">
+    <div class="conteneur conteneur--large">
+      <ul class="reassurance__liste">
+        <li class="reassurance__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m15 9-2.5 6L9 15l2.5-6L15 9Z"/></svg><span>Création sur mesure</span></li>
+        <li class="reassurance__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="14" height="10" rx="1"/><path d="M6 18h6"/><rect x="17" y="9" width="5" height="11" rx="1"/></svg><span>Design responsive</span></li>
+        <li class="reassurance__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>Optimisé pour Google</span></li>
+        <li class="reassurance__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Site sécurisé</span></li>
+        <li class="reassurance__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 11V5.5a1.5 1.5 0 0 1 3 0V11"/><path d="M11.5 11V4.5a1.5 1.5 0 0 1 3 0V11"/><path d="M14.5 11.5V7a1.5 1.5 0 0 1 3 0v7.5c0 3.6-2.6 6.5-6 6.5-2.3 0-4-1-5.2-2.9L4 14.4a1.6 1.6 0 0 1 2.7-1.7l1.8 2.3"/></svg><span>Accompagnement humain</span></li>
+      </ul>
+    </div>
+  </section>
+  <main id="contenu">
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="entete-section reveler">
+        <div>
+          <p class="surtitre">Forfait Basic — 420 €</p>
+          <h2>Ce qui est inclus, point par point.</h2>
+        </div>
+        <div>
+          <p class="chapo">
+            Un paiement unique, sans abonnement Web et Go. Tout ce qui suit est compris
+            dans le prix de base.
+          </p>
+        </div>
+      </div>
+      <div class="inclus reveler" style="--retard:60ms">
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20c0-6 4-12 12-14 1.5-.5 3-1 4-2 0 4-.5 8-2 11-2 4-6 6-10 6H4Z"/><path d="M4 20c3-3 6-5 9-6"/></svg>
+          <div>
+            <h4>Un design créé sur mesure</h4>
+            <p>Des pages pensées pour votre métier, vos couleurs et vos clients.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="14" height="10" rx="1"/><path d="M6 18h6"/><rect x="17" y="9" width="5" height="11" rx="1"/></svg>
+          <div>
+            <h4>Parfait sur téléphone et ordinateur</h4>
+            <p>Un affichage vérifié sur mobile, tablette et ordinateur avant la livraison.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 6h14M5 11h14M5 16h9"/></svg>
+          <div>
+            <h4>Aide à la rédaction</h4>
+            <p>Des textes clairs qui présentent vos services et donnent envie de vous écrire.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+          <div>
+            <h4>Trouvable sur Google</h4>
+            <p>Une structure propre pour être bien présent dès la mise en ligne.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M3.5 9h17M3.5 15h17"/></svg>
+          <div>
+            <h4>Adresse web à votre nom</h4>
+            <p>Votre nom de domaine (ex. : monentreprise.fr) configuré à votre nom.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3Z"/></svg>
+          <div>
+            <h4>Mise en ligne complète</h4>
+            <p>Hébergement et configuration technique pris en charge de bout en bout.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <div>
+            <h4>HTTPS et site sécurisé</h4>
+            <p>Connexion sécurisée, un signal de confiance pour vos visiteurs.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="m9.5 13.5 2 2 3.5-4"/></svg>
+          <div>
+            <h4>Livré en règle (RGPD)</h4>
+            <p>Cookies et mentions légales : votre site est conforme dès le départ.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <div>
+            <h4>Formulaire, carte et galerie</h4>
+            <p>Formulaire de contact, carte Google Maps et galerie photos inclus.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z"/></svg>
+          <div>
+            <h4>Formation et tutoriel PDF</h4>
+            <p>Une prise en main expliquée simplement, tutoriel PDF inclus.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Z"/><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7"/><path d="M20 12c0 1.7-3.6 3-8 3s-8-1.3-8-3"/></svg>
+          <div>
+            <h4>Sauvegarde de votre site</h4>
+            <p>Une copie de vos fichiers conservée, pour repartir vite en cas de problème.</p>
+          </div>
+        </div>
+        <div class="inclus__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.5 11V5.5a1.5 1.5 0 0 1 3 0V11"/><path d="M11.5 11V4.5a1.5 1.5 0 0 1 3 0V11"/><path d="M14.5 11.5V7a1.5 1.5 0 0 1 3 0v7.5c0 3.6-2.6 6.5-6 6.5-2.3 0-4-1-5.2-2.9L4 14.4a1.6 1.6 0 0 1 2.7-1.7l1.8 2.3"/></svg>
+          <div>
+            <h4>Disponibilité après la mise en ligne</h4>
+            <p>Je reste joignable une fois le site publié : vous n'êtes pas laissé seul.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sur-ivoire">
+    <div class="conteneur">
+      <div class="duo reveler">
+        <div class="duo__media">
+          <img src="assets/img/craft.webp" width="1600" height="893" loading="lazy"
+               decoding="async"
+               alt="Schéma d'une page de site internet et de sa version mobile, avec les
+                    repères d'alignement de la mise en page.">
+        </div>
+        <div>
+          <p class="surtitre">La méthode</p>
+          <h2>Un site utile avant d'être joli.</h2>
+          <p>
+            Un joli site qui n'apporte aucun contact est un joli site raté. Avant de
+            choisir une couleur ou une police, je regarde qui sont vos clients, ce qu'ils
+            cherchent, et ce qui va les décider à vous écrire plutôt qu'à fermer l'onglet.
+          </p>
+          <p>Trois exigences guident chaque page&nbsp;:</p>
+          <ul class="liste-check">
+            <li><strong>Clarté</strong> — en deux secondes, vos visiteurs comprennent qui
+                vous êtes et comment vous joindre.</li>
+            <li><strong>Crédibilité</strong> — un design soigné et des contenus sérieux
+                inspirent confiance dès la première visite.</li>
+            <li><strong>Conversion</strong> — boutons, formulaire, carte et horaires :
+                tout facilite la prise de contact.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AVANT / APRÈS ================= -->
+  <section class="section sur-ivoire" id="avant-apres">
+    <div class="conteneur">
+      <div class="entete-section reveler">
+        <div>
+          <p class="surtitre">Avant / après</p>
+          <h2>La différence se voit en trois secondes.</h2>
+        </div>
+        <div>
+          <p class="chapo">
+            Beaucoup d'activités sérieuses sont desservies par un site vieillissant.
+            Voici, concrètement, ce qui change.
+          </p>
+        </div>
+      </div>
+
+      <div class="avant-apres reveler" style="--retard:60ms">
+        <article class="aa-carte aa-carte--avant">
+          <span class="aa-carte__label">Avant</span>
+          <div class="maquette">
+            <svg viewBox="0 0 400 240" role="img"
+                 aria-label="Schéma d'un site vieillissant : texte dense, contenus mal alignés, navigation surchargée.">
+              <rect width="400" height="240" fill="#FFFFFF"/>
+              <rect x="0" y="0" width="400" height="26" fill="#DDD8D0"/>
+              <rect x="10" y="9" width="46" height="8" fill="#A9A49B"/>
+              <g fill="#BDB8B0">
+                <rect x="150" y="10" width="26" height="6"/><rect x="182" y="10" width="30" height="6"/>
+                <rect x="218" y="10" width="22" height="6"/><rect x="246" y="10" width="34" height="6"/>
+                <rect x="286" y="10" width="26" height="6"/><rect x="318" y="10" width="30" height="6"/>
+                <rect x="354" y="10" width="20" height="6"/>
+              </g>
+              <rect x="12" y="38" width="180" height="12" fill="#8F8A82"/>
+              <g fill="#CFC9C0">
+                <rect x="12" y="60" width="376" height="5"/><rect x="12" y="70" width="376" height="5"/>
+                <rect x="12" y="80" width="376" height="5"/><rect x="12" y="90" width="340" height="5"/>
+                <rect x="12" y="100" width="376" height="5"/><rect x="12" y="110" width="300" height="5"/>
+              </g>
+              <rect x="12" y="126" width="110" height="70" fill="#E3DED6"/>
+              <path d="M12 126h110v70H12z M12 126l110 70 M122 126l-110 70" stroke="#CFC9C0" fill="none" stroke-width="1"/>
+              <g fill="#CFC9C0">
+                <rect x="134" y="126" width="254" height="5"/><rect x="134" y="136" width="254" height="5"/>
+                <rect x="134" y="146" width="230" height="5"/><rect x="134" y="156" width="254" height="5"/>
+                <rect x="134" y="166" width="200" height="5"/><rect x="134" y="176" width="254" height="5"/>
+                <rect x="134" y="186" width="170" height="5"/>
+              </g>
+              <rect x="12" y="208" width="376" height="20" fill="#EDE9E2"/>
+              <rect x="20" y="215" width="120" height="5" fill="#CFC9C0"/>
+            </svg>
+          </div>
+          <h3>Un site qui dessert votre travail</h3>
+          <ul class="aa-liste">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6 18 18M18 6 6 18"/></svg><span>Illisible sur téléphone, il faut zoomer</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6 18 18M18 6 6 18"/></svg><span>On ne comprend pas tout de suite ce que vous faites</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6 18 18M18 6 6 18"/></svg><span>Le contact est enterré au fond d'une page</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6 18 18M18 6 6 18"/></svg><span>Absent ou mal placé dans les résultats Google</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6 18 18M18 6 6 18"/></svg><span>Une image qui ne reflète pas la qualité de votre travail</span></li>
+          </ul>
+        </article>
+
+        <article class="aa-carte aa-carte--apres">
+          <span class="aa-carte__label">Après</span>
+          <div class="maquette">
+            <svg viewBox="0 0 400 240" role="img"
+                 aria-label="Schéma d'un site moderne Web et Go : hiérarchie claire, grande image, appel à l'action visible.">
+              <rect width="400" height="240" fill="#FCFAF6"/>
+              <rect x="0" y="0" width="400" height="28" fill="#14181C"/>
+              <circle cx="24" cy="14" r="7" fill="none" stroke="#8FC0CD" stroke-width="1.2"/>
+              <rect x="38" y="11" width="40" height="6" rx="1" fill="#F7F4EE"/>
+              <g fill="#8B8F94">
+                <rect x="250" y="11" width="24" height="5" rx="1"/>
+                <rect x="282" y="11" width="24" height="5" rx="1"/>
+                <rect x="314" y="11" width="24" height="5" rx="1"/>
+              </g>
+              <rect x="348" y="7" width="42" height="14" rx="2" fill="#2E7387"/>
+              <rect x="24" y="52" width="150" height="13" rx="2" fill="#14181C"/>
+              <rect x="24" y="72" width="120" height="13" rx="2" fill="#14181C"/>
+              <g fill="#C9C4BC">
+                <rect x="24" y="96" width="150" height="5" rx="1"/>
+                <rect x="24" y="106" width="130" height="5" rx="1"/>
+              </g>
+              <rect x="24" y="124" width="74" height="20" rx="2" fill="#1B4B5A"/>
+              <rect x="106" y="124" width="66" height="20" rx="2" fill="none" stroke="#C9C4BC" stroke-width="1"/>
+              <rect x="200" y="52" width="176" height="112" rx="3" fill="#DDE6E8"/>
+              <path d="M200 140l40-30 34 24 30-22 72 40v10a3 3 0 0 1-3 3H203a3 3 0 0 1-3-3z" fill="#B7CBD1"/>
+              <circle cx="248" cy="80" r="11" fill="#CBD9DD"/>
+              <rect x="24" y="182" width="110" height="42" rx="3" fill="#F0EBE3"/>
+              <rect x="145" y="182" width="110" height="42" rx="3" fill="#F0EBE3"/>
+              <rect x="266" y="182" width="110" height="42" rx="3" fill="#F0EBE3"/>
+              <g fill="#B0AAA1">
+                <rect x="34" y="194" width="54" height="5" rx="1"/><rect x="34" y="205" width="80" height="4" rx="1"/>
+                <rect x="155" y="194" width="54" height="5" rx="1"/><rect x="155" y="205" width="80" height="4" rx="1"/>
+                <rect x="276" y="194" width="54" height="5" rx="1"/><rect x="276" y="205" width="80" height="4" rx="1"/>
+              </g>
+            </svg>
+          </div>
+          <h3>Un site qui travaille pour vous</h3>
+          <ul class="aa-liste">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5"/></svg><span>Parfaitement lisible sur téléphone, sans zoomer</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5"/></svg><span>Votre métier compris en moins de dix secondes</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5"/></svg><span>Un contact accessible depuis n'importe quelle page</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5"/></svg><span>Une structure propre, pensée pour Google</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5"/></svg><span>Une image à la hauteur de votre travail</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sur-sombre">
+    <div class="conteneur">
+      <div class="entete-section reveler">
+        <div>
+          <p class="surtitre">Comment ça marche</p>
+          <h2>Le déroulé d'un projet.</h2>
+        </div>
+        <div>
+          <p class="chapo">
+            De la première discussion à la mise en ligne, vous savez toujours où en est
+            votre site et ce qu'on attend de vous.
+          </p>
+        </div>
+      </div>
+      <div class="etapes reveler" style="--retard:60ms">
+        <article class="etape">
+          <span class="etape__num">01</span>
+          <h3>On échange</h3>
+          <p>Analyse de vos besoins, de votre secteur et de vos objectifs avant toute chose.
+             Un devis gratuit et détaillé vous est remis à l'issue de cet échange.</p>
+        </article>
+        <article class="etape">
+          <span class="etape__num">02</span>
+          <h3>Je conçois</h3>
+          <p>Création de la structure et du design du site, adaptés à votre activité.
+             Je vous aide aussi à rédiger les textes si besoin.</p>
+        </article>
+        <article class="etape">
+          <span class="etape__num">03</span>
+          <h3>Vous validez</h3>
+          <p>Présentation du site, relecture ensemble et ajustements. Rien n'est mis en
+             ligne tant que le résultat ne vous convient pas.</p>
+        </article>
+        <article class="etape">
+          <span class="etape__num">04</span>
+          <h3>Je mets en ligne</h3>
+          <p>Configuration du domaine, de l'hébergement et du HTTPS, mise en ligne,
+             puis formation à la prise en main avec tutoriel PDF.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="entete-section reveler">
+        <div>
+          <p class="surtitre">Contrat sur mesure</p>
+          <h2>Les options, si vous en avez besoin.</h2>
+        </div>
+        <div>
+          <p class="chapo">
+            On part du Forfait Basic à 420 €, puis vous ajoutez uniquement ce qui vous
+            sert. Les options marquées <strong>Tuto inclus</strong> sont livrées avec un
+            tutoriel pour être 100 % autonome.
+          </p>
+        </div>
+      </div>
+      <div class="options reveler" style="--retard:60ms">
+        <div class="options__ligne">
+          <span class="options__nom">Espace administrateur<span class="puce-tuto">Tuto inclus</span><span class="options__note">Gérez vos documents en autonomie</span></span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+320 €</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Blog<span class="puce-tuto">Tuto inclus</span><span class="options__note">Publiez vos actualités vous-même</span></span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+250 €</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Création de logo<span class="options__note">Fichiers haute définition</span></span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+150 €</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Formulaire avancé<span class="options__note">Devis en ligne, pièces jointes</span></span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+120 €</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Galerie / portfolio avancé</span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+80 €</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Avis Google intégrés</span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+70 €</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Rédaction des textes des pages supplémentaires</span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+60 €/page</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Page supplémentaire</span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+50 €/page</span>
+        </div>
+        <div class="options__ligne">
+          <span class="options__nom">Retouche / optimisation photos</span>
+          <span class="options__pointille" aria-hidden="true"></span>
+          <span class="options__prix">+50 €</span>
+        </div>
+      </div>
+      <div class="duo-encadres reveler" style="--retard:80ms;margin-top:2.5rem">
+        <div class="encadre">
+          <h4>Après la mise en ligne</h4>
+          <p>
+            Les modifications sont facturées <strong>40 € de l'heure</strong>, sur devis
+            gratuit préalable (1 h minimum). Besoin régulier ? Le carnet de
+            <strong>5 h prépayées à 180 €</strong> est plus avantageux, sans limite de durée.
+          </p>
+        </div>
+        <div class="encadre">
+          <h4>Hébergement et nom de domaine</h4>
+          <p>
+            Ils sont souscrits <strong>à votre nom</strong>, directement chez l'hébergeur :
+            vous êtes 100 % propriétaire, sans intermédiaire. Comptez en général
+            <strong>50 à 100 € par an</strong>. La configuration est incluse dans le forfait.
+          </p>
+        </div>
+      </div>
+      <div class="groupe-btn reveler" style="margin-top:2.5rem">
+        <a class="btn btn--accent" href="contact.html">Composer mon contrat (devis gratuit)</a>
+        <a class="btn btn--fantome" href="documents/grille-tarifaire-webetgo.pdf">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5v11"/><path d="m7.5 10 4.5 4.5 4.5-4.5"/><path d="M4.5 19.5h15"/></svg> Télécharger la grille tarifaire (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sur-sombre cta-final">
+    <div class="conteneur conteneur--etroit reveler">
+      <p class="surtitre surtitre--centre">Prendre contact</p>
+      <h2>Un site complet, sans y passer vos soirées.</h2>
+      <p class="chapo">Expliquez-moi votre projet et recevez un devis gratuit et détaillé, ligne par ligne.</p>
+      <div class="groupe-btn">
+        <a class="btn btn--large" href="contact.html">Parlons de votre projet</a>
+        <a class="btn btn--fantome btn--large" href="tarifs.html">Voir les tarifs</a>
+      </div>
+      <p class="cta-final__mail">
+        Ou écrivez-moi directement : <a href="mailto:webetgo022@gmail.com">webetgo022@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__haut">
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="tarifs.html#faq">Questions fréquentes</a></li>
+            <li><a href="documents/grille-tarifaire-webetgo.pdf">Grille tarifaire (PDF)</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html#cookies" data-bandeau-rouvrir>Cookies &amp; données</a></li>
+            <li><a href="cgv.html">Conditions générales de vente</a></li>
+            <li><a href="confidentialite.html">Confidentialité &amp; cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied__bas">
+        <p>© <span data-annee>2026</span> Web et Go — Gabriel LEGENTIL. Tous droits réservés.</p>
+        <div class="pied__legal">
+          <span>SIRET 106&nbsp;879&nbsp;794&nbsp;00019</span>
+          <span>TVA non applicable, art.&nbsp;293&nbsp;B du CGI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="aviscook" data-bandeau hidden role="dialog" aria-modal="false"
+       aria-labelledby="aviscook-titre" aria-describedby="aviscook-texte">
+    <div class="aviscook__boite">
+      <div>
+        <p class="aviscook__titre" id="aviscook-titre">Cookies &amp; données</p>
+        <p class="aviscook__texte" id="aviscook-texte">
+          Ce site ne dépose <strong>aucun cookie</strong> et n'utilise aucun traceur.
+          Seule la carte du secteur (page À propos) fait appel à OpenStreetMap, qui
+          reçoit votre adresse IP pour afficher les images.
+          <a href="confidentialite.html">En savoir plus</a>
+        </p>
+      </div>
+      <div class="aviscook__actions">
+        <button type="button" class="btn btn--accent" data-bandeau-accepter>
+          J'ai compris
+        </button>
+        <button type="button" class="btn btn--fantome" data-bandeau-refuser
+                aria-label="Rejeter l'affichage de la carte">
+          Rejeter
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/bandeau.js" defer></script>
+</body>
+</html>
