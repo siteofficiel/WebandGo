@@ -171,8 +171,11 @@
         </aside>
 
         <div class="reveler" style="--retard:60ms">
-          <form class="formulaire" data-formulaire data-destinataire="webetgo022@gmail.com"
-                action="mailto:webetgo022@gmail.com" method="post" enctype="text/plain" novalidate>
+          <!-- Pas d'attribut action : une cible "mailto:" n'étant pas sécurisée (HTTPS),
+               le navigateur affiche un avertissement et désactive la saisie automatique.
+               L'envoi est composé par site.js ; sans JavaScript, le bouton « Écrire à … »
+               ci-dessous prend le relais. -->
+          <form class="formulaire" data-formulaire data-destinataire="webetgo022@gmail.com" novalidate>
 
             <h2 style="font-size:clamp(1.4rem,1.2rem+.6vw,1.8rem);margin-top:0">
               Votre demande
@@ -250,7 +253,7 @@
             </p>
 
             <div class="formulaire__pied">
-              <button class="btn btn--accent btn--large" type="submit">
+              <button class="btn btn--accent btn--large" type="submit" data-formulaire-envoi>
                 Envoyer ma demande
               </button>
               <a class="btn btn--fantome" href="mailto:webetgo022@gmail.com">

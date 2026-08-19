@@ -11,6 +11,10 @@
 }
 
 /* --- Écran d'attente avant chargement (aucune requête tierce) ------------- */
+/* [hidden] doit l'emporter sur le display:flex ci-dessous, sinon l'écran
+   d'attente reste affiché par-dessus la carte une fois celle-ci chargée. */
+.carte__ecran[hidden] { display: none; }
+
 .carte__ecran {
   display: flex;
   flex-direction: column;

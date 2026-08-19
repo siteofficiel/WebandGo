@@ -1464,6 +1464,10 @@ a.coordonnees__valeur:hover { color: var(--encre); }
 }
 .formulaire__note { font-size: .84rem; color: var(--gris-chaud); max-width: 34ch; }
 
+/* Sans JavaScript, le bouton d'envoi ne peut rien composer : on le masque
+   au profit du lien « Écrire à … », qui reste pleinement fonctionnel. */
+.sans-js [data-formulaire-envoi] { display: none; }
+
 .message-etat {
   margin-top: 1.2rem;
   padding: .9rem 1.1rem;
