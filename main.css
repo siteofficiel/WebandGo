@@ -1763,12 +1763,21 @@ a.coordonnees__valeur:hover { color: var(--encre); }
   flex-direction: column;
   gap: 1rem;
   margin: 0;
-  padding: clamp(1.4rem, 3vw, 2rem);
-  background: var(--ivoire);
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background: #FFFFFF;
   border: 1px solid var(--trait);
+  border-left: 3px solid var(--ocre);
   border-radius: var(--rayon);
+  box-shadow: 0 2px 12px rgba(20, 24, 28, .07);
 }
-.avis__etoiles { display: flex; gap: .25rem; color: var(--ocre); }
+.avis__etoiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: .22rem;
+  color: #FBBC04;
+}
 .avis__texte { margin: 0; }
 .avis__texte p {
   font-size: .98rem;
@@ -1776,7 +1785,7 @@ a.coordonnees__valeur:hover { color: var(--encre); }
   color: #33474C;
   margin: 0;
 }
-.avis__auteur { margin-top: auto; }
+.avis__auteur { margin-top: auto; padding-top: .9rem; border-top: 1px solid var(--trait); }
 .avis__auteur strong { font-family: var(--titre); font-size: 1rem; color: var(--encre); }
 .avis__auteur span { display: block; margin-top: .2rem; font-size: .8rem; color: var(--gris-chaud); }
 
