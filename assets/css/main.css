@@ -530,12 +530,6 @@ li { margin-bottom: .4em; }
   animation: entree-panneau 520ms cubic-bezier(.22,.61,.36,1) forwards;
   animation-delay: calc(var(--i, 0) * 45ms + 100ms);
 }
-.panneau__lien span {
-  font-family: var(--texte);
-  font-size: .7rem;
-  letter-spacing: .14em;
-  color: #7FB6C4;
-}
 @keyframes entree-panneau { to { opacity: 1; transform: none; } }
 
 .panneau__pied { margin-top: 2.5rem; }
@@ -1758,6 +1752,43 @@ a.coordonnees__valeur:hover { color: var(--encre); }
 /* --------------------------------------------------------------------------
    24. Impression
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   Avis clients (page Réalisations)
+   -------------------------------------------------------------------------- */
+.avis { display: grid; gap: 1.5rem; }
+@media (min-width: 800px) { .avis { grid-template-columns: 1fr 1fr; } }
+
+.avis__carte {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  background: #FFFFFF;
+  border: 1px solid var(--trait);
+  border-left: 3px solid var(--ocre);
+  border-radius: var(--rayon);
+  box-shadow: 0 2px 12px rgba(20, 24, 28, .07);
+}
+.avis__etoiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: .22rem;
+  color: #FBBC04;
+}
+.avis__texte { margin: 0; }
+.avis__texte p {
+  font-size: .98rem;
+  line-height: 1.65;
+  color: #33474C;
+  margin: 0;
+}
+.avis__auteur { margin-top: auto; padding-top: .9rem; border-top: 1px solid var(--trait); }
+.avis__auteur strong { font-family: var(--titre); font-size: 1rem; color: var(--encre); }
+.avis__auteur span { display: block; margin-top: .2rem; font-size: .8rem; color: var(--gris-chaud); }
+
 @media print {
   .entete, .panneau, .pied, .cta-final, .hamburger, .aviscook { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
